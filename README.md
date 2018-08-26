@@ -1,2 +1,2 @@
-# domo-homepage
-This is the sourcecode and home of the DOMO Homepage
+# The DOMO-Project
+This is the official Home of the DOMO Project!
