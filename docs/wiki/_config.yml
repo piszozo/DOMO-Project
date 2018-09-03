@@ -2,7 +2,7 @@ title: DOMO wiki
 description: This is the official DOMO Wiki
 show_downloads: true
 git_branch: master
-logo_url:logo.png
+logo_url: logo.png
 google_analytics:
 theme: 
 wiki_folder: wiki
