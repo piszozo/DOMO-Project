@@ -105,16 +105,13 @@ img {
 }
 
 header {
-  width: 272px;
-  float: left;
-  position: fixed;
-  -webkit-font-smoothing: subpixel-antialiased;
-  overflow-y: auto;
-  overflow-x: auto;
-  max-height: 100%;
+  width:270px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
 }
 
-header .downloads {
+header ul {
   list-style:none;
   height:40px;
   padding:0;
@@ -124,22 +121,22 @@ header .downloads {
   width:270px;
 }
 
-header .downloads li {
+header li {
   width:89px;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
 }
 
-header .downloads li:first-child a {
+header li:first-child a {
   border-radius:5px 0 0 5px;
 }
 
-header .downloads li:last-child a {
+header li:last-child a {
   border-radius:0 5px 5px 0;
 }
 
-header .downloads a {
+header ul a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -149,11 +146,11 @@ header .downloads a {
   height:34px;
 }
 
-header .downloads a:hover {
+header ul a:hover {
   color:#999;
 }
 
-header .downloads a:active {
+header ul a:active {
   background-color:#f0f0f0;
 }
 
@@ -162,12 +159,12 @@ strong {
   font-weight:700;
 }
 
-header .downloads li + li + li {
+header ul li + li + li {
   border-right:none;
   width:89px;
 }
 
-header .downloads a strong {
+header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
@@ -233,7 +230,7 @@ footer {
     display:inline;
   }
 
-  header .downloads {
+  header ul {
     position:absolute;
     right:50px;
     top:52px;
@@ -250,7 +247,7 @@ footer {
     padding:0;
   }
 
-  header .downloads, header p.view {
+  header ul, header p.view {
     position:static;
   }
 
@@ -264,11 +261,11 @@ footer {
     padding:15px;
   }
 
-  header .downloads {
+  header ul {
     width:99%;
   }
 
-  header li, header .downloads li + li + li {
+  header li, header ul li + li + li {
     width:33%;
   }
 }

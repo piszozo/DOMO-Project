@@ -1,11 +1,10 @@
-title: DOMO wiki
-description: This is the official DOMO Wiki
+title: git-wiki
+description: git-wiki is a jekyll theme originally based on jekyll-theme-minimal
 show_downloads: true
 git_branch: master
-logo_url: https://github.com/Utopianer/DOMO-Project/tree/master/docs/wiki/assets/images
+logo_url:
 google_analytics:
 theme: 
-wiki_folder: wiki
 use_github_wiki: false
 use_prose_io: true
 google_cse_token: 
