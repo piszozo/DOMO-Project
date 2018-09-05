@@ -2,7 +2,7 @@ title: DOMO wiki
 description: This is the official DOMO Wiki
 show_downloads: true
 git_branch: master
-logo_url: https://github.com/Utopianer/DOMO-Project/tree/master/docs/wiki/assets/images
+logo_url: https://github.com/Utopianer/DOMO-Project/tree/master/docs/wiki/assets/images/logo.png
 google_analytics:
 theme: 
 wiki_folder: wiki
@@ -18,3 +18,5 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-feed
+sass:
+  sass_dir: _sass
