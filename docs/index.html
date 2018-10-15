@@ -18,13 +18,15 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/wow.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 
 
 <header id="header" data-spy="affix" data-offset-top="75">
 <div class="container">
-	<div class="logo">
+	<div class="logo  wow animated fadeInLeft animated">
 		<a href="index.html">The DOMO Project<span class="site-tagline">Community oriented development</span></a>
 	</div>
 	<div class="navbar-header">
@@ -33,7 +35,7 @@
 	</button>
 	</div>
  
-	<nav class="navbar">
+	<nav class="navbar  wow animated fadeInRight animated">
 	<div class="collapse navbar-collapse" id="myNavbar">
 	<ul class="nav navbar-nav">
 	  <li><a href="#sec-home">Home</a></li>
@@ -54,12 +56,11 @@
 <div class="slider">
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 	<div class="carousel-inner">
-	<div class="item active">
-	  <img width="100%" src="images/slider-1.jpg" >
-		<div class="slidertxt">
+	<div class="item active" style="background-image:url(images/slider-1.jpg)">
+	 	<div class="slidertxt wow animated fadeInUp animated">
 		<h1>Domocoin is an experiment <br>founded on my Bachelor Thesis: 
 		<h1>Potential Analysis of Blockchain <br>based Communitys</h1>
-		<a href="#sec-download" class="btn btn-default">download wallet now</a>
+		<a href="#" class="btn btn-default">download wallet now</a>
 		</div>
 	</div>
 	</div>
@@ -67,28 +68,29 @@
 </div>
 </section>
 
-
+<section class="section" id="sec-download">
 <div class="container">
-	<section class="section" id="sec-download">
+	
 	<div class="title text-center">
-	<p></p>
-		<h1>Download</h1>
+		<h1 class="wow animated fadeInDown animated">Download</h1>
 	</div>
 	<div class="row download-list">
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/releases/download/DOMO_Wallets_2.0/Windows_wallet_2.0.zip" class="box"><i class="fa fa-download"></i>Windows wallet</a></div>
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/releases" class="box"><i class="fa fa-download"></i>Linux wallet</a></div>
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DomoCore" class="box"><i class="fa fa-download"></i>sourcecode</a></div>
 	</div>
-	</section>
+</div>
+</section>
 
-	<section class="section" id="sec-feature">
-	<div class="title text-center">
+<section class="section" id="sec-feature">
+<div class="container">
+	<div class="title text-center  wow animated fadeInDown animated">
 		<h1>Domocoin Features</h1>
 		<h5>With simplicity and fairness in mind!</h5>
 	</div>
 	<div class="row">
-		<div class="col-sm-5 text-center"><img src="images/large-domo.jpg" alt=""></div>
-		<div class="col-sm-7 our-feature text-center">
+		<div class="col-sm-5 text-center  wow animated fadeInLeft animated"><img src="images/large-domo.png" alt=""></div>
+		<div class="col-sm-7 our-feature text-center  wow animated fadeInRight animated">
 			<div class="row">
 				<div class="col-sm-6 item">
 					<div class="box">
@@ -113,8 +115,10 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	</section>
-	<hr>
+<div class="container">
+	
 	<!--section class="section" id="sec-download">
 	<div class="row ourvdo">
 		<div class="col-sm-6">
@@ -232,6 +236,10 @@
 
 <div id="backtotop"></div>
 <script src="js/plugin.js"></script>
-
+<!------------animation------------>
+<script>
+new WOW().init();
+</script>
+<!------------animation------------>
 </body>
 </html>
