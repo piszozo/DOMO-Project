@@ -22,8 +22,8 @@ img{max-width:100%;}
 .slider-home video{ width:100%;  height:100%; display:block;}
 .slider-home iframe{ width:100%; height:100%; display:block; border:none; }
 
-.slider{ margin:0 auto 3em;color:#444444; position:relative;}
-.slider .item{background-position: center center;background-position: center;background-repeat: no-repeat;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover;}
+.slider{ margin:0 auto 3em;color:#444444; position:relative; }
+.slider .item{background-position: center center;background-position: center;background-repeat: no-repeat;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover; background-attachment:fixed; height:650px}
 .slider .slidertxt{ width: 100%;left: 0;right: 0;margin: auto;position: absolute;top:30%;z-index: 99; color:#fff;max-width:992px;text-align:center; padding:0 15px; color:#fff}
 .slider .slidertxt h1{font-size:36px; margin:1.5em 0 .5em; line-height:1.2}
 .slider .slidertxt .btn{ background:#fff; font-size:15px; text-transform:uppercase; color:#3c62c6; border-radius:25px; padding:12px 25px; margin:10px 0 0}
@@ -50,13 +50,16 @@ img{max-width:100%;}
 .title h1{ color:#f11d2c; margin:0}
 .title h5{margin:0}
 
+
+
+
 .welcometxt{ padding-top:0px;}
 .ourvdo{ margin-bottom:80px; padding-top:30px; font-size:18px;}
 .ourvdo h1{color:#f11d2c; margin:20px 0 15px}
-
+#sec-feature{padding:3em 0; background:#e4ecff; margin-bottom:3em}
 .our-feature{ margin-top:2em}
 .our-feature .item{}
-.our-feature .box{ height: 150px; font-size:20px; color:#002496;box-shadow: 0 0 35px #d6d6d6;margin-bottom: 30px;padding: 40px 0 0 0;}
+.our-feature .box{ height: 150px; font-size:20px; color:#002496;box-shadow: 0 0 35px #d6d6d6;margin-bottom: 30px;padding: 40px 0 0 0; background:#fff}
 .our-feature .box p strong{ display:block; font-weight:600}
 
 .span-5{ width:20%; float:left; padding-left:10px; padding-right:10px;}	
@@ -127,7 +130,7 @@ border-radius: 50%;}
    .slider .slidertxt h1 {font-size:20px;}
 	#footer h1 {font-size:25px;}
 
-	
+	.slider .item{height:450px;}
 
 }
 @media(max-width:520px){
@@ -136,6 +139,7 @@ border-radius: 50%;}
    .title h1 {font-size:30px;}
    .ourvdo {font-size:15px;}
    .ourvdo h1 {font-size:30px;}
+   .slider .item{height:400px;}
 }
 @media(max-width:420px){
 	#header .logo {font-size: 18px;}
