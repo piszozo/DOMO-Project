@@ -103,7 +103,7 @@ border-radius: 50%;}
 #footer .ftrlinks li a{ display:block}
 #footer .newsletter{}
 #footer .newsletter .form-control{ border:none; box-shadow:none; font-size:12px; background:#f4f4f4; height:45px;}
-#footer .newsletter .btn{ width:100%; font-size:14px; height:45px; text-transform:uppercase; border-radius:4px}
+#footer .newsletter .btn{ width:100%; font-size:14px; text-transform:uppercase; border-radius:4px}
 
 
 #copyright{padding:20px 0; color:#6d6c6c; font-size:12px; background:#222222;text-align:center}
