@@ -44,7 +44,7 @@
 	  <li><a href="#sec-develpment">Development</a></li>
 	  <li><a href="#sec-history">History</a></li>
 	  <li><a href="#footer">Join us</a></li>
-	   <li><a href="http://explorer.domoproject.org/">Explorer</a></li>
+	  <li><a href="#" onClick="redirect('http://explorer.domoproject.org/')">Explorer</a></li>
 	  
 	</ul>
 	</div>
@@ -238,6 +238,10 @@
 <script src="js/plugin.js"></script>
 <!------------animation------------>
 <script>
+function redirect(url) {
+   window.location = url ;
+}
+
 new WOW().init();
 </script>
 <!------------animation------------>
