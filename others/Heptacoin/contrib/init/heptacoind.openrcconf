@@ -1,0 +1,33 @@
+# /etc/conf.d/heptacoind: config file for /etc/init.d/heptacoind
+
+# Config file location
+#HEPTACOIND_CONFIGFILE="/etc/heptacoin/heptacoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $HEPTACOIND_USER)
+#HEPTACOIND_PIDDIR="/var/run/heptacoind"
+
+# What filename to give the pidfile
+#HEPTACOIND_PIDFILE="${HEPTACOIND_PIDDIR}/heptacoind.pid"
+
+# Where to write heptacoind data (be mindful that the blockchain is large)
+#HEPTACOIND_DATADIR="/var/lib/heptacoind"
+
+# User and group to own heptacoind process
+#HEPTACOIND_USER="heptacoin"
+#HEPTACOIND_GROUP="heptacoin"
+
+# Path to heptacoind executable
+#HEPTACOIND_BIN="/usr/bin/heptacoind"
+
+# Nice value to run heptacoind under
+#HEPTACOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+HEPTACOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for heptacoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+HEPTACOIND_SIGTERM_TIMEOUT=60

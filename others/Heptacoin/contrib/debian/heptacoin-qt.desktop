@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Heptacoin Core
+Comment=Connect to the Heptacoin P2P Network
+Comment[de]=Verbinde mit dem Heptacoin peer-to-peer Netzwerk
+Comment[fr]=Heptacoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Heptacoin, eşten eşe kriptografik sanal para birimi
+Exec=heptacoin-qt %u
+Terminal=false
+Type=Application
+Icon=heptacoin128
+MimeType=x-scheme-handler/heptacoin;
+Categories=Office;Finance;

@@ -1,0 +1,6 @@
+usr/local/bin/heptacoin-qt usr/bin
+share/pixmaps/heptacoin32.xpm usr/share/pixmaps
+share/pixmaps/heptacoin16.xpm usr/share/pixmaps
+share/pixmaps/heptacoin128.png usr/share/pixmaps
+debian/heptacoin-qt.desktop usr/share/applications
+debian/heptacoin-qt.protocol usr/share/kde4/services/

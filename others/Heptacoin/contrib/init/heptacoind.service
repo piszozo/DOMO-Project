@@ -1,0 +1,22 @@
+[Unit]
+Description=Heptacoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=heptacoin
+Group=heptacoin
+
+Type=forking
+PIDFile=/var/lib/heptacoind/heptacoind.pid
+ExecStart=/usr/bin/heptacoind -daemon -pid=/var/lib/heptacoind/heptacoind.pid \
+-conf=/etc/heptacoin/heptacoin.conf -datadir=/var/lib/heptacoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
