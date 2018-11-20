@@ -28,7 +28,14 @@
 <header id="header" data-spy="affix" data-offset-top="75">
 <div class="container">
 	<div class="logo  wow animated fadeInLeft animated">
-		<a href="index.html">The DOMO Project<span class="site-tagline">Community oriented development</span></a>
+		<a href="index.html" tkey="site_name"></a>
+	</div>
+	<div class="langtrans">
+	<ul>
+	<li><a href="javascript:void(0)" onClick="setLanguage('en')"><img src="images/flag-english.png" alt="english" title="English"></a></li>
+	<li><a href="javascript:void(0)" onClick="setLanguage('fr')"><img src="images/flag-france.png" alt="french" title="French" ></a></li>
+	<li><a href="javascript:void(0)" onClick="setLanguage('it')"><img src="images/flag-italy.png" alt="italian" title="Italian"></a></li>
+	</ul>
 	</div>
 	<div class="navbar-header">
 	<button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
@@ -39,13 +46,13 @@
 	<nav class="navbar  wow animated fadeInRight animated">
 	<div class="collapse navbar-collapse" id="myNavbar">
 	<ul class="nav navbar-nav">
-	  <li><a href="#sec-home">Home</a></li>
-	  <li><a href="#sec-download">Downloads</a></li>
-	  <li><a href="#sec-feature">Features</a></li>
-	  <li><a href="#sec-develpment">Development</a></li>
-	  <li><a href="#sec-history">History</a></li>
-	  <li><a href="#footer">Join us</a></li>
-	  <li><a href="#" onClick="redirect('http://explorer.domoproject.org/')">Explorer</a></li>
+	  <li><a href="#sec-home" tkey="home"></a></li>
+	  <li><a href="#sec-download" tkey="downloads"></a></li>
+	  <li><a href="#sec-feature" tkey="features"></a></li>
+	  <li><a href="#sec-develpment" tkey="development"></a></li>
+	  <li><a href="#sec-history" tkey="history"></a></li>
+	  <li><a href="#footer" tkey="join_us"></a></li>
+	  <li><a href="#" onClick="redirect('http://explorer.domoproject.org/')" tkey="explorer"></a></li>
 	  
 	</ul>
 	</div>
@@ -57,11 +64,12 @@
 <div class="slider">
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 	<div class="carousel-inner">
-	<div class="item active" style="background-image:url(images/slider-1.jpg)">
-	 	<div class="slidertxt wow animated fadeInUp animated">
-		<h1>Domocoin is an experiment <br>founded on my Bachelor Thesis: 
-		<h1>Potential Analysis of Blockchain <br>based Communitys</h1>
-		<a href="https://github.com/Utopianer/DOMO-Project/releases" class="btn btn-default">download wallet now</a>
+	<div class="item active" >
+	<div id="particles-js"></div>
+ 	<div class="slidertxt wow animated fadeInUp animated">
+		<h1 tkey="slider_txt_1"></h1> 
+		<h1 tkey="slider_txt_2"></h1>
+		<a href="https://github.com/Utopianer/DOMO-Project/releases" class="btn btn-default" tkey="dwnld_wallet"></a>
 		</div>
 	</div>
 	</div>
@@ -73,16 +81,16 @@
 <div class="container">
 	
 	<div class="title text-center">
-		<h1 class="wow animated fadeInDown animated">Downloads</h1>
+		<h1 class="wow animated fadeInDown animated" tkey="downloads"></h1>
 	</div>
 	<div class="row download-list">
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/releases/download/DOMO_Wallets_2.0/Windows_wallet_2.0.zip" class="box"><i class="fa fa-download"></i>Windows Wallet</a></div>
-		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/releases" class="box"><i class="fa fa-download"></i>Linux Wallet</a></div>
+		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/releases" class="box"  ><i class="fa fa-download"></i>Linux Wallet</a></div>
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DomoCore" class="box"><i class="fa fa-download"></i>Sourcecode</a></div>
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/DOMO-Project/blob/master/docs/Masternode_Guide(beta).pdf" class="box"><i class="fa fa-download"></i>Masternode Guide</a></div>
 		<div class="col-sm-4"><a href="https://github.com/Utopianer/Domo-Masternode-Setup" class="box"><i class="fa fa-download"></i>Masternode Setup Script</a></div>
 	</div>
-		<blockquote>
+		<blockquote tkey="menu_dwnld_content">
 		The Cryptocurrency will be used as a "ticket" to enter the Community in the future (proof of ownership). We are developing the first prototype of a new kind of social network approach. Only people holding Domocoins in their wallet will be able to login to the Network. This way mostly only "crypto" and blockchain enthusiasts will join the Community and create an environment Cryptotwitter is dreaming of. After reaching a decent community-size within the prototype, we will do a official crowdfunding with KYC to kick off the development of a decentralized, autonomous social network, which is not run by a single entity or centralized servers. Domocoin will remain as ticket to enter the community, masternode owners and teammembers (contributors) from the early stage will have a very important role in the network. So this is your chance to join the team in early stages, earn a masternode for your effort and finally build a social network which can´t be taken down by regulations and is maintained by the people actually using it.
 		</blockquote>
 </div>
@@ -91,8 +99,8 @@
 <section class="section" id="sec-feature">
 <div class="container">
 	<div class="title text-center  wow animated fadeInDown animated">
-		<h1>Domocoin Features</h1>
-		<h5>With simplicity and fairness in mind!</h5>
+		<h1 tkey="menu_feature_title_1"></h1>
+		<h5 tkey="menu_feature_title_2"></h5>
 	</div>
 	<div class="row">
 		<div class="col-sm-5 text-center  wow animated fadeInLeft animated"><img src="images/large-domo.png" alt=""></div>
@@ -100,22 +108,22 @@
 			<div class="row">
 				<div class="col-sm-6 item">
 					<div class="box">
-						<p>Short: <strong>DOMO</strong></p>
+						<p tkey="feature_box_1"></p>
 					</div>
 				</div>
 				<div class="col-sm-6 item">
 					<div class="box">
-						<p>Block Reward Masternode:<strong> 0.9 DOMO </strong></p>
+						<p tkey="feature_box_2"></p>
 					</div>
 				</div>
 				<div class="col-sm-6 item">
 					<div class="box">
-						<p>Staking Reward:  <strong>0.1 DOMO</strong></p>
+						<p tkey="feature_box_3"></p>
 					</div>
 				</div>
 				<div class="col-sm-6 item">
 					<div class="box">
-						<p>Masternode Setup Collateral:<strong> 1000 DOMO </strong></p>
+						<p tkey="feature_box_4"></p>
 					</div>
 				</div>
 			</div>
@@ -127,9 +135,9 @@
 	
 	<section class="section" id="sec-develpment">
 	<div class="title text-center">
-			<h1>Development</h1>
+			<h1 tkey="development"></h1>
 	<blockquote>
-    <p>Most Cryptocurrency´s focus on fast transactions, anonymity and beautiful roadmaps to showcase the Coin, which is actually a default feature of every Blockchain. Domocoin will go a different, "unusual" road.</p>
+    <p tkey="menu_dev_content_1"></p>
 	</blockquote>
 		<p></p>
 		<video width="100%" autoplay loop muted>
@@ -137,9 +145,9 @@
 	Your browser does not support the video tag.
 </video>
 <p></p>
-		<p>Community first! We have infinite opportunities and ways of development. Thanks to our Community-oriented development, EVERYONE has a voice! Contribute your own ideas and get paid in Domocoins! </p> 
+		<p tkey="menu_dev_content_2"></p> 
 		
-		<p>Domocoin is the first stage on the road to a truly autonomous Community.</p>
+		<p tkey="menu_dev_content_3"></p>
 		 It doesn´t matter how many Coins you own, more important is you are holding any!
 	</div>
 	</section>
@@ -148,34 +156,34 @@
 <div class="container">	
 <hr>
 	<div class="title text-center">
-		<h1>History</h1>
+		<h1 tkey="history"></h1>
 	</div>
 	<div class="latest-blog text-center">
 		<div class="row">
 		<div class="timeline-box span-5">
 			<div class="timeline-year"><div class="date">06/2018</div><img src="images/large-domo.jpg" alt=""></div>
-			<h3>Domocoin – Release </h3>
-			<p>Start of DOMOcoin, a Cryptocurrency based on the X11 algorithm! To ensure a fair distribution people have 1 month to get as many Coins as possible with their miners.</p>
+			<h3 tkey="history_release_title"></h3>
+			<p tkey="history_release_content"></p>
 		</div>
 		<div class="timeline-box span-5">
 			<div class="timeline-year"><div class="date">07/2018</div><img src="images/domocoinlaunch.png" alt=""></div>
-			<h3>Domocoin – Fork </h3>
-			<p>POW-Phase is over! Domocoin is forking to a 100% POS + Masternodes solution!</p>
+			<h3 tkey="history_fork_title"></h3>
+			<p tkey="history_fork_content"></p>
 		</div>
 		<div class="timeline-box span-5">
 			<div class="timeline-year"><div class="date">08/2018</div><img src="images/pivx.png" alt=""></div>
-			<h3>Domocoin – PivX </h3>
-			<p>After troubleshooting many issues with the 100% POS solution, we decided to become a PivX-Clone as it contains all desired features. Please contact us to swap your Coins!</p>
+			<h3 tkey="history_pivx_title"> </h3>
+			<p tkey="history_pivx_content"></p>
 		</div>
 		<div class="timeline-box span-5">
 			<div class="timeline-year"><div class="date">10/2018</div><img src="images/cratex.jpg" alt="" onClick="redirect('https://cratex.io/index.php?pair=DOMO/BTC')"></div>
-			<h3>First exchange listing!</h3>
-			<p>We are listed on Cratex! Click on the Image to visit the exchange.</p>
+			<h3 tkey="history_exchange_title"></h3>
+			<p tkey="history_exchange_content"></p>
 		</div>
 		<div class="timeline-box span-5">
 			<div class="timeline-year"><div class="date">12/2018</div><img src="images/default.jpg" alt=""></div>
-			<h3>Coming soon! </h3>
-			<p>Coming soon!</p>
+			<h3 tkey="history_coming_title"></h3>
+			<p tkey="history_coming_content"></p>
 		</div>
 		</div>
 	</div>
@@ -186,7 +194,7 @@
 
 <footer id="footer" class="section">
 <div class="container">
-	<h1>Join us now and become a part of our Road to a truly autonomous Community!</h1>
+	<h1 tkey="join_us_content"></h1>
 	<div class="row">
 		<div class="col-sm-3 social">
 			
@@ -205,19 +213,22 @@
 			<a href="https://bitcointalk.org/index.php?topic=4709461.0" target="_blank"><img src="./images/bitcointalk.png" width="100" height="100" alt=""></a>
 </div>
 		<div class="col-sm-3 newsletter">
-				<a href="https://cryptodomo.org/cryptominer" class="btn btn-danger">Donate by Mining with Browser</a>	
+				<a href="https://cryptodomo.org/cryptominer" class="btn btn-danger" tkey="donate">Donate by Mining with Browser</a>	
 				(Sometimes blocked by Antivirus/AdBlocker)
 		</div>
 	</div>
 </div>
 </footer>
 <div id="copyright" class="ftrnav">
+	<div class="langtrans">
+	<a href="javascript:void(0)" onClick="setLanguage('en')"><img src="images/flag-english.png" alt="english" title="English"></a> | <a href="javascript:void(0)" onClick="setLanguage('fr')"><img src="images/flag-france.png" alt="french" title="French" ></a> | <a href="javascript:void(0)" onClick="setLanguage('it')"><img src="images/flag-italy.png" alt="italian" title="Italian"></a>
+	</div>
 	<div class="container">
-		<p>© DOMO 2018. All Rights Reserved.</p>
+		<p tkey="copyright"></p>		
 		<ul>
-		<li><a href="http://feedback.domoproject.org/">Leave Feedback</a></li>
-		<li><a href="http://explorer.domoproject.org/">Explorer</a></li>
-		<li><a href="mailto:domocoin@gmx.net">Send us a Mail</a></li>
+		<li><a href="http://feedback.domoproject.org/" tkey="leave_feedback"></a></li>
+		<li><a href="http://explorer.domoproject.org/" tkey="explorer"></a></li>
+		<li><a href="mailto:domocoin@gmx.net" tkey="send_us_mail"></a></li>
 		</ul>
 	</div>
 </div>
@@ -225,6 +236,8 @@
 
 <div id="backtotop"></div>
 <script src="js/plugin.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="lang.js"></script>
 <!------------animation------------>
 <script>
 function redirect(url) {
@@ -234,5 +247,11 @@ function redirect(url) {
 new WOW().init();
 </script>
 <!------------animation------------>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>  
+<script src="js/stats.js"></script>
+
+
 </body>
 </html>
