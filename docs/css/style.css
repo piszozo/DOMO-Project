@@ -23,12 +23,36 @@ img{max-width:100%;}
 .slider-home iframe{ width:100%; height:100%; display:block; border:none; }
 
 .slider{ margin:0 auto 3em;color:#444444; position:relative; }
-.slider .item{background-position: center center;background-position: center;background-repeat: no-repeat;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover; background-attachment:fixed; height:650px}
+.slider .item{ background-color:#03175e; background-position: center center;background-position: center;background-repeat: no-repeat;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover; background-attachment:fixed; height:650px}
 .slider .slidertxt{ width: 100%;left: 0;right: 0;margin: auto;position: absolute;top:30%;z-index: 99; color:#fff;max-width:992px;text-align:center; padding:0 15px; color:#fff}
 .slider .slidertxt h1{font-size:36px; margin:1.5em 0 .5em; line-height:1.2}
-.slider .slidertxt .btn{ background:#fff; font-size:15px; text-transform:uppercase; color:#3c62c6; border-radius:25px; padding:12px 25px; margin:10px 0 0}
-.slider .slidertxt .btn:hover{ background:#f11d2c;color:#fff}
+.slider .slidertxt .btn{ background:none; overflow:hidden; font-size:15px; text-transform:uppercase; color:#f11d2c; border-radius:25px; padding:12px 25px; margin:10px 0 0; border:1px solid #fff; position:relative; display:inline-block; transition:.9s}
 
+.slider .slidertxt .btn:hover {
+  border-color: #fff; color: #fff;
+}
+
+.slider .slidertxt .btn:after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  -webkit-transform: skew(50deg);
+  transform: skew(50deg);
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.9s;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  width: 135%;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.slider .slidertxt .btn:hover:after {
+  left: -35%;
+  width: 0;
+}
 
 
 .download-list{ margin-bottom:2EM;}
@@ -108,6 +132,9 @@ border-radius: 50%;}
 
 #copyright{padding:20px 0; color:#6d6c6c; font-size:12px; background:#222222;text-align:center}
 #copyright p{text-align:center; margin:0 0 5px;}
+#copyright .langtrans{text-align:center; margin:0 0 5px;}
+.langtrans a{ color:#fff;}
+.langtrans a:hover{ color:#f11d2c;}
 .ftrnav{}
 .ftrnav ul{list-style:none; padding:0; margin:0}
 .ftrnav ul li{ display:inline-block}
